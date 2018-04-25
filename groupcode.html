@@ -6,7 +6,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
+
+
             $('.player_select').css('visibility', 'hidden');
+
             $('.beach').hover(function () {
                 $('.bg').attr('src', 'beach.jpg');
                 console.log(5);
@@ -36,9 +39,28 @@
                 $('.player_select').css('visibility', 'visible');
                 console.log(7);
             });
+
+
             $('select[name="player_left"]').change(function () {
                 if($(this).val()=='donny'){
-                    alert("this is donny");
+                    console.log($(this).val());
+                    $('.left_turtles .donny').css('visibility', 'visible')
+                    
+                }
+                if($(this).val()=='leo'){
+                    console.log($(this).val());
+                    $('.left_turtles .leo').css('visibility', 'visible')
+                    
+                }
+                if($(this).val()=='mikey'){
+                    console.log($(this).val());
+                    $('.left_turtles .mikey').css('visibility', 'visible')
+                    
+                }
+                if($(this).val()=='raphael'){
+                    console.log($(this).val());
+                    $('.left_turtles .raphael').css('visibility', 'visible')
+                    
                 }
             });
         });
@@ -76,15 +98,15 @@
                 </div>
                 <div class="left_turtles">
                     <img class="donny" src = "./donny.png">
-                    <!-- <img class="leo" src = "./leo.png">
+                    <img class="leo" src = "./leo.png">
                     <img class="mikey" src = "./mikey.png">
-                    <img class="raphael" src = "./raphael.png"> -->
+                    <img class="raphael" src = "./raphael.png">
                 </div>
                 <div class="right_turtles">
                     <img class="donny" src = "./donny.png">
-                    <!-- <img class="leo" src = "./leo.png">
+                    <img class="leo" src = "./leo.png">
                     <img class="mikey" src = "./mikey.png">
-                    <img class="raphael" src = "./raphael.png"> -->
+                    <img class="raphael" src = "./raphael.png">
                 </div>
             
     </div>

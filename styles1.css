@@ -89,7 +89,7 @@ body{
                 width:200px;
                 height:400px;
                 margin-left:0px;
-                /* visibility:hidden; */
+                visibility:hidden;
             }
         .right_turtles{
             width: 200px;
@@ -101,6 +101,6 @@ body{
             .right_turtles img{
                 width:200px;
                 height:400px;
-                /* visibility:hidden; */
+                visibility:hidden;
             }
             
